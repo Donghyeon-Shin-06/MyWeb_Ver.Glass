@@ -1,0 +1,190 @@
+<script src="https://cdn.tailwindcss.com"></script>
+
+<body class="min-h-screen bg-slate-950 text-slate-100">
+  <!-- 배경 글로우 -->
+  <div class="pointer-events-none fixed inset-0 -z-10">
+    <div class="absolute inset-0 bg-[radial-gradient(900px_circle_at_20%_15%,rgba(99,102,241,0.22),transparent_60%),radial-gradient(800px_circle_at_85%_35%,rgba(16,185,129,0.14),transparent_55%),radial-gradient(900px_circle_at_40%_90%,rgba(236,72,153,0.10),transparent_55%)]"></div>
+  </div>
+
+  <main class="mx-auto max-w-6xl px-4 py-10">
+    <section class="rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl shadow-[0_30px_120px_-60px_rgba(0,0,0,.95)]">
+      <div class="p-6 md:p-8">
+        <div class="flex items-end justify-between flex-wrap gap-4">
+          <div>
+            <h1 class="text-2xl md:text-3xl font-bold tracking-tight">계산기</h1>
+            <p class="mt-2 text-slate-300/90">My First Project</p>
+          </div>
+        </div>
+
+        <div class="mt-8 grid gap-6 lg:grid-cols-[1fr_440px] items-start">
+          <aside class="rounded-2xl border border-white/10 bg-white/5 p-5 md:p-6">
+            <h2 class="font-semibold text-lg">사용 팁</h2>
+            <ul class="mt-3 space-y-2 text-sm text-slate-300/90">
+              <li>• 숫자 버튼 입력</li>
+              <li>• 연산자 선택 후 "=" 클릭</li>
+              <li>• C로 초기화</li>
+            </ul>
+          </aside>
+
+          <!-- 계산기 카드 -->
+          <div class="rounded-3xl border border-white/10 bg-white/5 p-5 md:p-6">
+<html>
+<head>
+  
+  <title>계산기</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+</head>
+
+<body class="bg-slate-950 text-slate-100">
+  <div class="max-w-6xl mx-auto p-4">
+    <!-- 상단 메뉴 -->
+    <div class="flex items-center justify-between rounded-2xl border border-white/10 bg-white/5 px-4 py-3">
+      <a href="index.html" class="font-extrabold">My Homepage</a>
+      <div class="flex gap-2 text-sm font-semibold">
+        <a href="index.html" class="rounded-xl px-3 py-2 hover:bg-white/10">홈</a>
+        <a href="calculator.html" class="rounded-xl bg-white/10 px-3 py-2">계산기</a>
+        <a href="about.html" class="rounded-xl px-3 py-2 hover:bg-white/10">자기소개</a>
+      </div>
+    </div>
+
+    <!-- 내용 -->
+    <div class="mt-6 rounded-3xl border border-white/10 bg-white/5 p-6">
+      <h1 class="text-2xl font-extrabold">계산기</h1>
+
+      <div class="mt-6 rounded-2xl border border-white/10 bg-black/20 p-4">
+        <div class="rounded-xl min-h-0 flex  justify-center p-3 sm:p-6 bg-black-100">
+  <div class="w-full max-w-[420px] bg-white rounded-xl shadow-sm border border-gray-200">
+    <div class="p-4 sm:p-5">
+      <h5 class="text-center mb-3 text-base sm:text-lg font-semibold text-black">
+        Calculator
+      </h5>
+
+      <input id="display" type="text" class="w-full text-right text-black sm:text-2xl px-3 sm:px-4 py-2 sm:py-3 mb-3 rounded-lg border border-gray-300 bg-white focus:outline-none" value="0" readonly />
+      <div class="keys grid grid-cols-4 gap-2 sm:gap-3">
+        <button class="h-10 sm:h-11 text-sm sm:text-base rounded-lg border border-gray-600 text-gray-700 hover:bg-blue-50" data-key="7">7</button>
+        <button class="h-10 sm:h-11 text-sm sm:text-base rounded-lg border border-gray-600 text-gray-700 hover:bg-blue-50" data-key="8">8</button>
+        <button class="h-10 sm:h-11 text-sm sm:text-base rounded-lg border border-gray-600 text-gray-700 hover:bg-blue-50" data-key="9">9</button>
+        <button class="h-10 sm:h-11 text-sm sm:text-base rounded-lg border border-blue-600 text-blue-600 hover:bg-blue-100" data-key="÷">÷</button>
+
+        <button class="h-10 sm:h-11 text-sm sm:text-base rounded-lg border border-gray-600 text-gray-700 hover:bg-blue-50" data-key="4">4</button>
+        <button class="h-10 sm:h-11 text-sm sm:text-base rounded-lg border border-gray-600 text-gray-700 hover:bg-blue-50" data-key="5">5</button>
+        <button class="h-10 sm:h-11 text-sm sm:text-base rounded-lg border border-gray-600 text-gray-700 hover:bg-blue-50" data-key="6">6</button>
+        <button class="h-10 sm:h-11 text-sm sm:text-base rounded-lg border border-blue-600 text-blue-600 hover:bg-blue-100" data-key="×">×</button>
+
+        <button class="h-10 sm:h-11 text-sm sm:text-base rounded-lg border border-gray-600 text-gray-700 hover:bg-blue-50" data-key="1">1</button>
+        <button class="h-10 sm:h-11 text-sm sm:text-base rounded-lg border border-gray-600 text-gray-700 hover:bg-blue-50" data-key="2">2</button>
+        <button class="h-10 sm:h-11 text-sm sm:text-base rounded-lg border border-gray-600 text-gray-700 hover:bg-blue-50" data-key="3">3</button>
+        <button class="h-10 sm:h-11 text-sm sm:text-base rounded-lg border border-blue-600 text-blue-600 hover:bg-blue-100" data-key="-">-</button>
+
+        <button class="col-span-2 h-10 sm:h-11 text-sm sm:text-base rounded-lg border border-blue-600 text-gray-700 hover:bg-blue-50" data-key="0">0</button>
+        <button class="h-10 sm:h-11 text-sm sm:text-base rounded-lg border border-blue-600 bg-yellow-400 text-gray-900 font-semibold hover:bg-yellow-500" data-key="C">C</button>
+        <button class="h-10 sm:h-11 text-sm sm:text-base rounded-lg border border-blue-600 bg-green-600 text-white font-semibold hover:bg-green-700" data-key="=">=</button>
+        <button class="h-10 sm:h-11 text-sm sm:text-base rounded-lg border border-blue-600 text-blue-600 hover:bg-blue-100" data-key="+">+</button>
+      </div>
+    </div>
+  </div>
+</div>
+      </div>
+    </div>
+
+    <script>
+      const display = document.getElementById("display");
+const keys = document.querySelector(".keys");
+
+let first = null;         // 이전 값
+let op = null;            // 현재 연산자
+let waitingSecond = false; // 연산자 누른 직후면 다음 숫자는 새로 입력
+
+function setDisplay(v) {
+  display.value = String(v);
+}
+
+function inputDigit(d) {
+  if (waitingSecond) {
+    setDisplay(d);
+    waitingSecond = false;
+    return;
+  }
+  const cur = display.value;
+  setDisplay(cur === "0" ? d : cur + d);
+}
+
+function clearAll() {
+  first = null;
+  op = null;
+  waitingSecond = false;
+  setDisplay("0");
+}
+
+function compute(a, operator, b) {
+  if (operator === "+") return a + b;
+  if (operator === "-") return a - b;
+  if (operator === "×") return a * b;
+  if (operator === "÷") return b === 0 ? "Error" : a / b;
+  return b;
+}
+
+function handleOperator(nextOp) {
+  const cur = Number(display.value);
+
+  if (first === null) {
+    first = cur;
+  } else if (op && !waitingSecond) {
+    const result = compute(first, op, cur);
+    if (result === "Error") {
+      setDisplay("Error");
+      first = null;
+      op = null;
+      waitingSecond = true;
+      return;
+    }
+    first = result;
+    setDisplay(result);
+  }
+
+  op = nextOp;
+  waitingSecond = true;
+}
+
+function doEqual() {
+  if (op === null || first === null) return;
+  const cur = Number(display.value);
+
+  const result = compute(first, op, cur);
+  if (result === "Error") {
+    setDisplay("Error");
+    first = null;
+    op = null;
+    waitingSecond = true;
+    return;
+  }
+
+  setDisplay(result);
+  first = result;          // 연속 계산 대비
+  waitingSecond = true;
+}
+
+keys.addEventListener("click", (e) => {
+  const btn = e.target.closest("button");
+  if (!btn) return;
+
+  const key = btn.dataset.key;
+
+  if (key >= "0" && key <= "9") inputDigit(key);
+  else if (key === "C") clearAll();
+  else if (key === "=") doEqual();
+  else if (key === "+" || key === "-" || key === "×" || key === "÷") handleOperator(key);
+});
+
+clearAll();
+    </script>
+  </div>
+</body>
+</html>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
